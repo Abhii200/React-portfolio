@@ -133,8 +133,8 @@ const Hero = () => {
               className="mt-8"
             >
               <a
-                href="/assets/ABHINAY GEDELA.pdf"
-                download="ABHINAY_GEDELA_Resume.pdf"
+                href="../assets/final resume.pdf"
+                download="final resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300"
