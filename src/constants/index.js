@@ -72,6 +72,7 @@ export const PROJECTS = [
     description:
       "Developed a personal portfolio website using React to showcase my projects and skills. Implemented responsive design, smooth navigation, and interactive elements to enhance user experience. Integrated with GitHub and LinkedIn for seamless access to my professional profiles.",
     technologies: ["React", "CSS", "JavaScript"],
+    link: "https://react-portfolio-amber-two.vercel.app/",
   },
 ];
 
