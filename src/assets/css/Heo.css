@@ -1,0 +1,113 @@
+.sound-wave-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.sound-wave-container::before,
+.sound-wave-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(120, 119, 198, 0.5);
+  transform: translate(-50%, -50%) scale(1);
+  animation: sound-wave 2s infinite;
+}
+
+.sound-wave-container::after {
+  animation-delay: 1s;
+}
+
+@keyframes sound-wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.experience-section {
+  margin-top: 4rem;
+}
+
+.experience-section h2 {
+  color: #fff;
+}
+
+.experience-section p {
+  color: #ccc;
+}
+
+.experience-section .text-violet-500 {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity, 1)) !important;
+}
+
+.experience-section .tech-box {
+  border: 1px solid #8b5cf6;
+  color: #8b5cf6;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-section {
+  margin-top: 4rem;
+}
+
+.projects-section h2 {
+  color: #fff;
+}
+
+.project-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #1a0f54;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.6);
+}
+
+.ticker {
+  display: flex;
+  gap: 2rem;
+  animation: ticker-scroll 10s linear infinite;
+  will-change: transform;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Additional mobile-specific styles */
+@media (max-width: 768px) {
+  .sound-wave-container {
+    margin-bottom: 40px; /* Increased bottom margin for mobile */
+  }
+
+  .sound-wave-container::before,
+  .sound-wave-container::after {
+    width: 90%; /* Slightly smaller waves on mobile */
+    height: 90%;
+  }
+}
