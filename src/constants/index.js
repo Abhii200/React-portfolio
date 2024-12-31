@@ -17,11 +17,8 @@ Developed and executed comprehensive Jest tests for 15+ Express.js endpoints, en
 integrity, which significantly reduced production issues.
 Optimized AI-powered scripts using OpenAI and Azure Form Recognizer to automate data extraction from over 1,000 Form 16
 tax documents, achieving 95% accuracy and reducing processing time by 80%.
-Implemented a Machine Learning model for classifying over 30 categories of files by leveraging Large Language Models
-(LLMs) and Hugging Face models for both text and image embeddings. Extracted and combined embeddings from text and
-images using pre-trained BERT and CLIP models.
-Trained a logistic regression classifier on the combined embeddings, achieving high accuracy in text and image classification
-tasks with an accuracy of 87.5%`,
+Developed a sophisticated Machine Learning model leveraging Large Language Models (LLMs) to classify 60+ file categories by integrating textual and visual features.Utilized OpenAI's API to create high-quality text embeddings, Sentence Transformers and Hugging Face models for embeddings, and stored them efficiently in ChromaDB while testing with Pinecone for performance evaluation.Trained a logistic regression classifier on combined embeddings, achieving an accuracy of 87.5% in diverse file classification tasks.
+Developed and served as a tester for a ledger prediction system for invoices,bank statements and receipts leveraging OpenAI embeddings for high-quality feature extraction and ChromaDB for efficient storage and retrieval, ensuring accurate and scalable classification.`,
     technologies: ["Python-Fastapi", "Typescript", "Postgres"],
   },
   {

@@ -1,7 +1,7 @@
 import profilePic from "../assets/Abhi3.png";
 import { HERO_CONTENT } from "../constants/index";
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaJava, FaNodeJs, FaGit, FaBlender, FaDocker } from 'react-icons/fa';
-import { SiFastapi, SiMysql, SiPostgresql, SiSupabase, SiFirebase, SiNestjs, SiTypescript, SiExpress, SiPostman } from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaJava, FaNodeJs, FaGit, FaBlender, FaDocker, FaPhp  } from 'react-icons/fa';
+import { SiFastapi, SiMysql, SiPostgresql, SiSupabase, SiFirebase, SiNestjs, SiTypescript, SiExpress, SiPostman} from 'react-icons/si';
 import '../assets/css/Heo.css';
 import { motion } from "framer-motion";
 
@@ -26,6 +26,7 @@ const Hero = () => {
     { icon: <SiPostman className="text-4xl" /> },
     { icon: <SiNestjs className="text-4xl" /> },
     { icon: <SiTypescript className="text-4xl" /> },
+    { icon: <FaPhp className="text-4xl" /> },
   ];
 
   const textVariants = {
@@ -102,7 +103,7 @@ const Hero = () => {
                 <FaGithub size={30} />
               </motion.a>
               <motion.a
-                href="https://twitter.com/your_twitter_handle"
+                href="https://x.com/abhi___o1?t=IdClexta91nUVAS-8qDTkg&s=09"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
@@ -113,7 +114,7 @@ const Hero = () => {
                 <FaTwitter size={30} />
               </motion.a>
               <motion.a
-                href="https://instagram.com/your_instagram_handle"
+                href="https://www.instagram.com/a_b_h_i__o1?igsh=MWU2NXg0MXdpM3QwNA==&utm_source=ig_contact_invite"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-300"
