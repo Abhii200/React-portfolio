@@ -1,9 +1,10 @@
 import profilePic from "../assets/Abhi3.png";
 import { HERO_CONTENT } from "../constants/index";
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaJava, FaNodeJs, FaGit, FaBlender, FaDocker, FaPhp  } from 'react-icons/fa';
-import { SiFastapi, SiMysql, SiPostgresql, SiSupabase, SiFirebase, SiNestjs, SiTypescript, SiExpress, SiPostman} from 'react-icons/si';
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaJava, FaNodeJs, FaGit, FaBlender, FaDocker, FaPhp } from 'react-icons/fa';
+import { SiFastapi, SiMysql, SiPostgresql, SiSupabase, SiFirebase, SiNestjs, SiTypescript, SiExpress, SiPostman } from 'react-icons/si';
 import '../assets/css/Heo.css';
 import { motion } from "framer-motion";
+import Typing from 'react-typing-effect';
 
 const Hero = () => {
   const skills = [
@@ -52,19 +53,39 @@ const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35 pt-32">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
-        {/* Left Column */}
-        <div className="w-full lg:w-1/2">
+        {/* Right Column (Image) */}
+        <div className="order-1 lg:order-2 w-full lg:w-1/2 flex justify-center items-start lg:items-center">
+          <motion.div
+            className="sound-wave-container"
+            initial="hidden"
+            animate="visible"
+            variants={imageVariants}
+          >
+            <img
+              className="rounded-full w-64 h-64 lg:w-80 lg:h-80"
+              src={profilePic}
+              alt="Profile Picture"
+            />
+          </motion.div>
+        </div>
+
+        {/* Left Column (Text and Social Media) */}
+        <div className="order-2 lg:order-1 w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
-              className="pb-8 lg:pb-16 text-6xl font-thin tracking-tight lg:text-8xl"
+              className="pb-8 lg:pb-16 text-5xl font-thin tracking-tight lg:text-7xl"
               initial="hidden"
               animate="visible"
               variants={textVariants}
             >
-              Abhinay Gedela
+              Hi, I am
+              <br />
+              <span className="text-violet-500">
+                <Typing text={['ABHINAY GEDELA']} speed={100} eraseDelay={1000} />
+              </span>
             </motion.h1>
             <motion.span
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-light text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-light text-transparent"
               initial="hidden"
               animate="visible"
               variants={textVariants}
@@ -143,22 +164,6 @@ const Hero = () => {
               </a>
             </motion.div>
           </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="w-full lg:w-1/2 flex justify-center items-start lg:items-center">
-          <motion.div
-            className="sound-wave-container"
-            initial="hidden"
-            animate="visible"
-            variants={imageVariants}
-          >
-            <img
-              className="rounded-full w-64 h-64 lg:w-80 lg:h-80"
-              src={profilePic}
-              alt="Profile Picture"
-            />
-          </motion.div>
         </div>
       </div>
 
