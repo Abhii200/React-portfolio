@@ -154,7 +154,7 @@ const Hero = () => {
               className="mt-8"
             >
               <a
-                href="../assets/final resume.pdf"
+                href="../assets/Abhinay_FullStack_Developer.pdf"
                 download="final resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
