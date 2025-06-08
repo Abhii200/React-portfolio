@@ -155,7 +155,7 @@ const Hero = () => {
             >
               <a
                 href="../assets/Abhinay_FullStack_Developer.pdf"
-                download="final resume.pdf"
+                download="Abhinay_FullStack_Developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300"
