@@ -3,6 +3,8 @@ import { HERO_CONTENT } from "../constants/index";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaJava, FaNodeJs, FaGit, FaBlender, FaDocker, FaPhp } from 'react-icons/fa';
 import { SiFastapi, SiMysql, SiPostgresql, SiSupabase, SiFirebase, SiNestjs, SiTypescript, SiExpress, SiPostman } from 'react-icons/si';
 import '../assets/css/Heo.css';
+import resumePDF from "../assets/Abhinay_FullStack_Developer.pdf";
+
 import { motion } from "framer-motion";
 import Typing from 'react-typing-effect';
 
@@ -154,7 +156,7 @@ const Hero = () => {
               className="mt-8"
             >
               <a
-                href="../assets/Abhinay_FullStack_Developer.pdf"
+                href={resumePDF}
                 download="Abhinay_FullStack_Developer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
